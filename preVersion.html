@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>preVersion</title>
+  <link rel="stylesheet" href="preVersion.css">
+  <script defer src="preVersion.js"></script>
+</head>
+<body>
+  
+  <div class="leftBar" onclick="toggle(this);">
+    <div id="fetchedLIst">
+      <div><input type="hidden">선택된 이미지</div>
+      <div class="leftList" onclick="event.stopPropagation();"></div>
+      <div><input type="hidden"></div>
+    </div>
+  </div>
+
+  <div class="wrapper" onclick="closeBar();">
+    
+    <div>
+      <div></div>
+    </div>
+
+    <div class="mainBox content">
+      <div class="banner" name="banner">
+        <div></div>
+        <div class="title">title</div>
+        <div class="verInfo">
+          <pre>
+
+ <small>[버전_정보]</small>
+ <i>pre_Version</i></pre>
+        </div>
+      </div>
+
+      <div class="imgCheck" id="imageCheck">
+        <div></div>
+        <div class="showWindow" id="showWindow">
+          
+        </div>
+        <div></div>
+      </div>
+
+      <div class="funcButton" id="functions">
+        <button onclick="" id="imagesInput">이미지 선택</button>
+        <input type="file" id="hiddenInput" style="display: none;" accept="image/*" multiple>
+        <button onclick="">초기화?</button>
+        <button onclick="">이미지 업로드</button>
+
+      </div>
+    </div>
+    <div>
+      <div></div>
+    </div>    
+  </div>
+  
+  <div class="rightBar" onclick="toggle(this);">
+    <div id="uploadLIst">
+      <div>오른편</div>
+      <div class="rightList" onclick="event.stopPropagation();">이미지_스크롤</div>
+      <div>오른편</div>
+    </div>
+  </div>
+  
+</body>
+</html>
